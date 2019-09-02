@@ -14,8 +14,7 @@ const initialGlobalState = {
   bool: false
 };
 const GlobalStateContext = React.createContext(initialGlobalState);
-//React.Dispatch<A> = (value: A) => void
-const DispatchStateContext = React.createContext(undefined);
+const DispatchStateContext = React.createContext<any>(undefined);
 
 /**
  * Global State provider & hooks
